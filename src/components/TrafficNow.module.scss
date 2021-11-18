@@ -1,0 +1,30 @@
+.TrafficNow {
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .sec {
+    padding: 10px;
+    width: 100px;
+    padding-bottom: 35px;
+//    margin: 3px;
+//     background-color: var(--color-bg-card);
+//     border-radius: 10px;
+//     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+
+    div:nth-child(1) {
+      color: var(--color-text-secondary);
+      height: 2em;
+      font-size: 0.7em;
+    }
+    div:nth-child(2) {
+      padding: 10px 0 0;
+      font-size: 0.6em;
+      color: #b73c6d;
+    }
+  }
+}
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background-color: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+::-webkit-scrollbar-thumb { background-color: rgb(121, 43, 74); border-radius: 10px; }

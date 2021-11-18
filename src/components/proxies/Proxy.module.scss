@@ -1,0 +1,87 @@
+.proxy {
+  margin: 3px;
+  padding: 5px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  outline: none;
+  border: 1px solid transparent;
+  &:focus {
+    border: 1px solid #792b4a;
+  }
+
+  max-width: 280px;
+  @media (--breakpoint-not-small) {
+    min-width: 170px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  background-color: var(--color-bg-proxy);
+  &.now {
+    background-color: #792b4a;
+    color: #ddd;
+  }
+  &.error {
+    opacity: 0.5;
+  }
+  &.selectable {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.proxyType {
+  font-family: var(--font-mono);
+  font-size: 0.6em ;
+  margin-right: 3px;
+  @media (--breakpoint-not-small) {
+    font-size: 0.6em;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proxyName {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 0.85em;
+  @media (--breakpoint-not-small) {
+    font-size: 0.75em;
+  }
+}
+
+.proxySmall {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid var(--color-background);
+
+  &.now {
+    border-color: var(--color-text-secondary);
+  }
+
+  &.selectable {
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background-color: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+::-webkit-scrollbar-thumb { background-color: rgb(121, 43, 74); border-radius: 10px; }
