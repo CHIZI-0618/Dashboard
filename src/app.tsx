@@ -22,6 +22,6 @@ ReactDOM.render(
 swRegistration.register();
 
 // eslint-disable-next-line no-console
-console.log('Checkout the repo: https://github.com/haishanh/yacd');
+console.log('Checkout the repo: https://github.com/Clash-Mini/Dashboard');
 // eslint-disable-next-line
 console.log('Version:', __VERSION__);

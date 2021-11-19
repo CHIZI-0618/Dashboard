@@ -8,21 +8,21 @@ const mapState = (s) => ({
 });
 
 function HeadImpl({
-  apiConfig,
+  //apiConfig,
   apiConfigs,
 }: {
   apiConfig: { baseURL: string };
   apiConfigs: any[];
 }) {
   React.useEffect(() => {
-    let title = 'yacd';
+    let title = 'Dashboard';
     if (apiConfigs.length > 1) {
-      try {
-        const host = new URL(apiConfig.baseURL).host;
-        title = `${host} - yacd`;
-      } catch (e) {
-        // ignore
-      }
+      // try {
+        //const host = new URL(apiConfig.baseURL).host;
+        title = `Clash.Mini - Dashboard`;
+      // } catch (e) {
+      //   // ignore
+      // }
     }
     document.title = title;
   });

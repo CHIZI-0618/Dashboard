@@ -1,5 +1,5 @@
 {
-  "name": "yacd",
+  "name": "Dashboard",
   "version": "0.3.4",
   "description": "Clash.Mini dashboard",
   "prettier": {
@@ -14,7 +14,7 @@
     "serve": "vite preview",
     "pretty": "prettier --single-quote --write 'src/**/*.{js,scss,ts,tsx,md}'"
   },
-  "browserslist": [
+  "browserslist":[
     ">0.25%",
     "not ie 11",
     "not op_mini all"
