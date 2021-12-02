@@ -28,5 +28,5 @@ yarn build
 ```
 
 ## Credits
-* ###[Haishanh - YACD](https://github.com/haishanh/yacd)
-* ###[yaling888 - Another YACD](https://github.com/yaling888/yacd)
+* ### [Haishanh - YACD](https://github.com/haishanh/yacd)
+* ### [yaling888 - Another YACD](https://github.com/yaling888/yacd)
