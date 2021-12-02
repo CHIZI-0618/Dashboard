@@ -1,12 +1,15 @@
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/1166872/47954055-97e6cb80-dfc0-11e8-991f-230fd40481e5.png" alt="yacd">
+  <img src="View/Dashboard.png" alt="Dashboard">
 </h1>
 
-> Yet Another [Clash](https://github.com/Dreamacro/clash) [Dashboard](https://github.com/Dreamacro/clash-dashboard)
+>  [Dashboard](https://github.com/Dreamacro/clash-dashboard) For Kennel [Clash.Meta](https://github.com/clash-mini/clash.meta)
 
-The site [http://yacd.haishan.me](http://yacd.haishan.me) is served with HTTP not HTTPS is because many browsers block requests to HTTP resources from a HTTPS website. If you think it's not safe, you could just download the [zip of the gh-pages](https://github.com/haishanh/yacd/archive/gh-pages.zip), unzip and open or serve `index.html` directly.
+###Display Process name
 
-[Docker image](https://hub.docker.com/r/haishanh/yacd) is also available as `haishanh/yacd`.
+
+Clash add field Process to Metadata and prepare to get process name for Restful API GET /connections.
+
+
 
 ## Development
 
@@ -23,3 +26,7 @@ yarn start
 # ready to deploy assets will be in the directory `public`
 yarn build
 ```
+
+## Credits
+* ###[Haishanh - YACD](https://github.com/haishanh/yacd)
+* ###[yaling888 - Another YACD](https://github.com/yaling888/yacd)
