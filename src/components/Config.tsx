@@ -43,8 +43,9 @@ const portFields = [
 ];
 
 const langOptions = [
-  ['zh', '中文'],
   ['en', 'English'],
+  ['zh_Hans', '中文-简体'],
+  ['zh_Hant', '中文-繁体'],
 ];
 
 const modeOptions = [

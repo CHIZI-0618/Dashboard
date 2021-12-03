@@ -4,8 +4,9 @@ import HttpBackend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
 const allLocales = {
-  zh: import('src/i18n/zh'),
-  en: import('src/i18n/en'),
+    zh_Hans: import('src/i18n/zh-Hans'),
+    zh_Hant: import('src/i18n/zh-Hant'),
+    en: import('src/i18n/en'),
 };
 
 type BackendRequestCallback = (
@@ -29,18 +30,18 @@ i18next
         callback: BackendRequestCallback
       ) {
         let p: PromiseLike<{ data: any }>;
-
         switch (url) {
-          case '/__zh/translation.json':
-          case '/__zh-CN/translation.json':
-            p = allLocales.zh;
+          case '/__zh_Hans/translation.json':
+            p = allLocales.zh_Hans;
+            break;
+          case '/__zh_Hant/translation.json':
+            p = allLocales.zh_Hant;
             break;
           case '/__en/translation.json':
           default:
             p = allLocales.en;
             break;
         }
-
         if (p) {
           p.then((mod) => {
             callback(null, { status: 200, data: mod.data });
@@ -48,7 +49,9 @@ i18next
         }
       },
     },
-    supportedLngs: ['en', 'zh'],
+    supportedLngs: ['en', 'zh_Hans','zh_Hant'],
+
+
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,

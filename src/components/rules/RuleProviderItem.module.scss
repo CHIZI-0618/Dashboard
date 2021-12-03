@@ -2,7 +2,18 @@
   display: grid;
   grid-template-columns: 40px 1fr 46px;
   height: 100%;
+  ;
 }
+
+.RuleProviderItem h2{
+  color: #3983a2;
+}
+
+.RuleProviderItem h2 span:nth-child(2){
+  color: #e6528c;
+  margin: 0 1em;
+}
+
 
 .left {
   display: inline-flex;
@@ -18,7 +29,12 @@
 }
 
 .gray {
-  color: #777;
+  color: #607d8b;
+}
+
+small.gray {
+  color: #607d8b;
+  margin-top: 0.1em;
 }
 
 .refreshButtonWrapper {
