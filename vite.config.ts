@@ -8,6 +8,7 @@ import * as pkg from './package.json';
 export default defineConfig(({ mode }) => ({
   define: {
     __VERSION__: JSON.stringify(pkg.version),
+    __MINI__: pkg.Mini,
     'process.env.NODE_ENV': JSON.stringify(mode),
     'process.env.PUBLIC_URL': JSON.stringify('./'),
   },

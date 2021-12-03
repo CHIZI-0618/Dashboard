@@ -1,6 +1,7 @@
 {
   "name": "Dashboard",
   "version": "0.3.4",
+  "Mini": false,
   "description": "Clash.Mini dashboard",
   "prettier": {
     "printWidth": 100,

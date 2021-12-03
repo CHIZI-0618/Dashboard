@@ -49,18 +49,24 @@ function AboutImpl(props: Props) {
   return (
     <>
       <ContentHeader title="About" />
+        {__MINI__ ? (
         <Version
             name="Clash.Mini"
             version="0.1.5"
             link="https://github.com/Clash-Mini/Clash.Mini"
-      />
-        {version && version.version ? (
+      />): null
+        }
+        {version.Meta ? (
         <Version
-          name="Clash.Kernel"
-          version={version.version}
+          name="Clash Kernel"
+          version={version.version+" - Meta"}
           link="https://github.com/Clash-Mini/clash.Meta"
         />
-      ) : null}
+      ) :  <Version
+            name="Clash.Kernel"
+            version={version.version}
+            link="https://github.com/Clash-Mini/clash.Meta"
+        />}
       <Version
         name="Dashboard"
         version={__VERSION__}
