@@ -6,6 +6,7 @@
 
 ### Display Process name
 
+<img src="View/Dashboard-Process.png" alt="Dashboard">
 
 Clash add field Process to Metadata and prepare to get process name for Restful API GET /connections.
 
