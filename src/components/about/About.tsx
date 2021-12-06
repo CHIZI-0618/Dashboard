@@ -56,17 +56,25 @@ function AboutImpl(props: Props) {
             link="https://github.com/Clash-Mini/Clash.Mini"
       />): null
         }
-        {version.Meta ? (
+        {version.meta ? (
         <Version
           name="Clash Kernel"
           version={version.version+" - Meta"}
           link="https://github.com/Clash-Mini/clash.Meta"
         />
-      ) :  <Version
+      ) : <Version
             name="Clash.Kernel"
             version={version.version}
-            link="https://github.com/Clash-Mini/clash.Meta"
+            link="https://github.com/Dreamacro/clash"
         />}
+        {version.experimental ? (
+            <Version
+                name="Clash Kernel"
+                version={version.version+" - Experimental"}
+                link="https://github.com/ClashDotNetFramework/experimental-clash"
+            />
+        ) :  null}
+
       <Version
         name="Dashboard"
         version={__VERSION__}

@@ -2,7 +2,7 @@ import cx from 'clsx';
 import * as React from 'react';
 import { keyCodes } from 'src/misc/keycode';
 
-import { getDelay, getProxies, NonProxyTypes } from '../../store/proxies';
+import {getDelay, getProxies, NonProxyTypes} from '../../store/proxies';
 import { connect } from '../StateProvider';
 import s0 from './Proxy.module.scss';
 import { ProxyLatency } from './ProxyLatency';
@@ -170,8 +170,10 @@ const mapState = (s: any, { name }) => {
   return {
     proxy: proxies[name],
     latency: delay[name],
+    NonProxyTypes: NonProxyTypes
   };
 };
+
 
 export const Proxy = connect(mapState)(ProxyImpl);
 export const ProxySmall = connect(mapState)(ProxySmallImpl);

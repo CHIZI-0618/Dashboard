@@ -1,5 +1,4 @@
 import * as React from 'react';
-import ContentHeader from 'src/components/ContentHeader';
 import { ProxyProvider } from 'src/components/proxies/ProxyProvider';
 import { FormattedProxyProvider } from 'src/store/types';
 
@@ -12,7 +11,7 @@ export function ProxyProviderList({
 
   return (
     <>
-      <ContentHeader title="Proxy Provider" />
+
       <div>
         {items.map((item) => (
           <ProxyProvider

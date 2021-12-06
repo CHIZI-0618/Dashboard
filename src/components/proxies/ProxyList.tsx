@@ -44,7 +44,7 @@ export function ProxyListSummaryView({
 }: ProxyListProps) {
   return (
     <div className={s.listSummaryView}>
-      {all.map((proxyName) => {
+      {all.map((proxyName)=> {
         return (
           <ProxySmall
             key={proxyName}
