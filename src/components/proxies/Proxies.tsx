@@ -110,7 +110,7 @@ function Proxies({
             </div>
 
             <div className={s0.topBar} style={{marginBottom:40,marginTop:80}} >
-            <ContentHeader title={t('Proxy Providers')} />
+            <ContentHeader title={t('Providers')} />
             </div>
             <ProxyProviderList items={proxyProviders} />
             <ProxyPageFab

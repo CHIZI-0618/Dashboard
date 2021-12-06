@@ -1,6 +1,7 @@
 export const data = {
   Overview: '概览',
   Proxies: '代理',
+  Providers:'代理模块',
   Rules: '规则',
   Conns: '连接',
   Config: '配置',

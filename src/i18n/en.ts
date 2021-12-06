@@ -1,6 +1,7 @@
 export const data = {
   Overview: 'Overview',
   Proxies: 'Proxies',
+  Providers:'Proxy Providers',
   Rules: 'Rules',
   Conns: 'Conns',
   Config: 'Config',
