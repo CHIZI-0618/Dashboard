@@ -7,6 +7,7 @@
     "printWidth": 100,
     "singleQuote": true
   },
+  "serve": "vite preview",
   "scripts": {
     "lint": "eslint --fix --cache src",
     "dev": "vite",
@@ -15,7 +16,7 @@
     "serve": "vite preview",
     "pretty": "prettier --single-quote --write 'src/**/*.{js,scss,ts,tsx,md}'"
   },
-  "browserslist":[
+  "browserslist": [
     ">0.25%",
     "not ie 11",
     "not op_mini all"
@@ -106,6 +107,6 @@
     "sass": "1.43.4",
     "typescript": "4.4.4",
     "vite": "2.6.14",
-    "vite-plugin-pwa": "0.11.3"
+    "vite-plugin-pwa": "^0.11.10"
   }
 }

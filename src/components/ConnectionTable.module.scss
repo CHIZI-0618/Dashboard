@@ -27,11 +27,18 @@
   padding: 8px 13px;
   font-size: 0.9em;
 
+  cursor: default;
   font-family: var(--font-normal);
+    &:hover {
+       background-color: #622b4282;}
 }
 
 .td.odd {
+  cursor: default;
   background: var(--color-row-odd);
+    &:hover {
+      background-color: #622b4282;
+      }
 }
 
 /* download upload td cells */

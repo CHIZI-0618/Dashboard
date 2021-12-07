@@ -28,6 +28,24 @@ export default defineConfig(({ mode }) => ({
       filename: 'sw.ts',
       strategies: 'injectManifest',
       base: './',
+      workbox: {
+        globPatterns: [],
+      },
+      manifest: {
+        name: 'Dashboard',
+        short_name: 'Dashboard',
+        description: 'Another Clash Dashboard',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'Clash.Mini.ico',
+            purpose: 'any maskable'
+          },
+          {
+            src: 'Clash.Mini.icns',
+          }
+        ]
+      }
     }),
   ],
   resolve: {
