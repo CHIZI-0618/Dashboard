@@ -52,15 +52,15 @@ function AboutImpl(props: Props) {
         {__MINI__ ? (
         <Version
             name="Clash.Mini"
-            version="0.1.5"
-            link="https://github.com/Clash-Mini/Clash.Mini"
+            version="0.1.6"
+            link="https://github.com/MetaCubeX/Clash.Mini"
       />): null
         }
         {version.meta ? (
         <Version
           name="Clash Kernel"
           version={version.version+" - Meta"}
-          link="https://github.com/Clash-Mini/clash.Meta"
+          link="https://github.com/MetaCubeX/Clash.Meta"
         />
       ) : <Version
             name="Clash.Kernel"
@@ -78,7 +78,7 @@ function AboutImpl(props: Props) {
       <Version
         name="Dashboard"
         version={__VERSION__}
-        link="https://github.com/Clash-Mini/Dashboard"
+        link="https://github.com/MetaCubeX/Dashboard"
       />
     </>
   );

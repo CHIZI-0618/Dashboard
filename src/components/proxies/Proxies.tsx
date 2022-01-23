@@ -108,25 +108,24 @@ function Proxies({
                     );
                 })}
             </div>
-
             <div className={s0.topBar} style={{marginBottom:40,marginTop:80}} >
-            <ContentHeader title={t('Providers')} />
+                { proxyProviders.length !== 0 ? <ContentHeader title={t('Providers')} /> : null}
             </div>
-            <ProxyProviderList items={proxyProviders} />
-            <ProxyPageFab
+                <ProxyProviderList items={proxyProviders} />
+                <ProxyPageFab
                 dispatch={dispatch}
                 apiConfig={apiConfig}
                 proxyProviders={proxyProviders}
-            />
-            <BaseModal
+                />
+                <BaseModal
                 isOpen={showModalClosePrevConns}
                 onRequestClose={closeModalClosePrevConns}
-            >
+                >
                 <ClosePrevConns
-                    onClickPrimaryButton={() => closePrevConnsAndTheModal(apiConfig)}
-                    onClickSecondaryButton={closeModalClosePrevConns}
+                onClickPrimaryButton={() => closePrevConnsAndTheModal(apiConfig)}
+                onClickSecondaryButton={closeModalClosePrevConns}
                 />
-            </BaseModal>
+                </BaseModal>
         </>
     );
 }
