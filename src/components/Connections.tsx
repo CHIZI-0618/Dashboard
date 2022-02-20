@@ -90,7 +90,7 @@ function formatConnectionDataItem(
     download,
     start: now - new Date(start).valueOf(),
     chains: chains.reverse().join(' / '),
-    rule: rule === 'GeoSite' || rule === 'GeoIP' || rule === 'RuleSet' ? `${rule} (${rulePayload})` : rule,
+    rule: (rulePayload == null | rulePayload === '') ? rule : (`${rule}(${rulePayload})`),
     ...metadata,
     host: `${host2}:${destinationPort}`,
     type: `${type}(${network})`,
