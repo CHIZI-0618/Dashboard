@@ -63,7 +63,7 @@ function AboutImpl(props: Props) {
           link="https://github.com/MetaCubeX/Clash.Meta"
         />
       ) : <Version
-            name="Clash.Kernel"
+            name="Clash Kernel"
             version={version.version}
             link="https://github.com/Dreamacro/clash"
         />}
